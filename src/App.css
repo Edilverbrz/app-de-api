@@ -197,19 +197,16 @@ body {
 }
 
 .btn-23 .marquee {
-  --spacing: 6em; /* Ajustado para el tamaño de la palabra CARRITO */
+  --spacing: 11em;                    /* 🌟 Aumentado para que la frase larga respire */
   --start: 0em;
-  --end: 6em;
-  -webkit-animation: marquee 1.2s linear infinite;
-  animation: marquee 1.2s linear infinite;
+  --end: 11em;                        /* 🌟 Sincronizado con el spacing */
+  -webkit-animation: marquee 1.5s linear infinite; /* Le di 1.5s para que ruede más suave */
+  animation: marquee 1.5s linear infinite;
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
   opacity: 0;
   position: relative;
-  /* Sombras del texto sincronizadas en blanco */
-  text-shadow:
-    #fff var(--spacing) 0,
-    #fff calc(var(--spacing) * -1) 0,
+  text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
     #fff calc(var(--spacing) * -2) 0;
 }
 
